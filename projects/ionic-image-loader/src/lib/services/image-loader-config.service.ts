@@ -1,4 +1,4 @@
-import { HttpHeaders } from '@angular/common/http';
+import { HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -38,6 +38,8 @@ export class ImageLoaderConfigService {
   spinnerColor;
 
   httpHeaders: HttpHeaders;
+
+  httpParams: HttpParams;
 
   // Must be default 'true' for the new WebView to show images
   fileNameCachedWithExtension = true;
@@ -200,6 +202,14 @@ export class ImageLoaderConfigService {
    */
   setHttpHeaders(headers: HttpHeaders) {
     this.httpHeaders = headers;
+  }
+
+  /**
+   * Set query param options for the HttpClient transfers.
+   * @param headers
+   */
+  setHttpParams(params: HttpParams) {
+    this.httpParams = params;
   }
 
   /**

@@ -390,7 +390,6 @@ export class ImageLoaderService {
         const data: Blob = await this.http.get(currentItem.imageUrl, {
           responseType: 'blob',
           headers: this.config.httpHeaders,
-          params: this.config.httpParams,
         }).toPromise();
 
         const file = await this.file.writeFile(localDir, fileName, data, {replace: true}) as FileEntry;

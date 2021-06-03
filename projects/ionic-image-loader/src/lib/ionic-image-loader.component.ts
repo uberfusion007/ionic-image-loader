@@ -155,7 +155,7 @@ export class IonicImageLoaderComponent implements OnInit {
     let httpParams = this.config.httpParams;
     let suffix = "";
     httpParams.keys().forEach((key, index) => {
-      suffix += index == 0 ? `?${key}=${httpParams.get(key)}` : `&${key}=${httpParams.get(key)}`;
+      suffix += index == 0 ? `?${key}=${httpParams.get(key)}` : `&${key}=${encodeURI(httpParams.get(key))}`;
     });
     
     this.imageLoader

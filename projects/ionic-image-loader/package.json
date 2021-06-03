@@ -1,6 +1,10 @@
 {
-  "name": "ionic-image-loader",
-  "version": "8.0.0",
+  "name": "@uberfusion007/ionic-image-loader",
+  "version": "8.0.2",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "git://github.com/uberfusion007/ionic-image-loader.git",
   "peerDependencies": {
     "@angular/common": "~8.1.2",
     "@angular/core": "~8.1.2",

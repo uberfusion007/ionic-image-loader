@@ -1,6 +1,6 @@
 {
   "name": "@uberfusion007/ionic-image-loader",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
